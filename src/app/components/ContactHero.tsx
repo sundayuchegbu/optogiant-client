@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const ContactHero = () => {
   return (
-    <section className="relative bg-gradient-to-br from-[#e0f2f1] to-[#ffffff] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center justify-between">
+    <section className="relative bg-gradient-to-br from-[#e0f2f1] to-[#ffffff] overflow-hidden ">
+      <div className="max-w-7xl mx-auto px-6 py-20 lg:py-0 flex flex-col lg:flex-row items-center justify-between">
         {/* Text Content */}
         <div className="text-center lg:text-left max-w-2xl z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#028010] leading-tight">
@@ -42,10 +42,9 @@ const ContactHero = () => {
 
       {/* Paint blob or decorative splash */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-        <Image
+        <img
           src="/p10.avif" // optional splash texture background
-          alt=""
-          fill
+          alt="topping"
           className="object-cover"
         />
       </div>

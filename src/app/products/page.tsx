@@ -77,7 +77,7 @@ export default function ProductsPage() {
               <li key={paint.id} className="w-full px-6">
                 <div className="flex flex-col md:flex-row items-center gap-10 bg-gray-100 rounded-lg p-8">
                   <div className="md:w-1/2">
-                    <Image
+                    <img
                       src={paint.image}
                       alt={paint.name}
                       className="w-full h-[500px] object-cover rounded-lg shadow"
@@ -143,7 +143,7 @@ export default function ProductsPage() {
                 key={paint.id}
                 className="bg-white shadow rounded-xl overflow-hidden hover:shadow-lg transition"
               >
-                <Image
+                <img
                   src={paint.image}
                   alt={paint.name}
                   className="w-full h-48 object-cover"

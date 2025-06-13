@@ -98,7 +98,7 @@ export default function PaintCarouselGlide() {
                   key={paint.id}
                   className="glide__slide bg-white shadow-md rounded-xl overflow-hidden"
                 >
-                  <Image
+                  <img
                     src={paint.image}
                     alt={paint.name}
                     className="w-full h-48 object-cover"

@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
       {/* Image Column */}
       <div className="w-full h-64 sm:w-1/2 sm:h-auto">
-        <Image
+        <img
           className="h-[600px] w-full object-cover"
           src="/p19.jpg"
           alt="Hero"

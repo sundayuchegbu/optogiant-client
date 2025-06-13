@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function AboutBody() {
   return (
     <main className="bg-white text-gray-800">
@@ -21,10 +19,12 @@ export default function AboutBody() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Vision */}
           <div>
-            <Image
+            <img
               src="/p7.jpeg" // replace with your actual image path
               alt="Vision"
               className="rounded-lg shadow-md mb-6 md:mb-0"
+              width={600}
+              height={400}
             />
           </div>
           <div>
@@ -42,7 +42,7 @@ export default function AboutBody() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mt-20">
           {/* Mission */}
           <div className="md:order-2">
-            <Image
+            <img
               src="/p12.jpg" // replace with your actual image path
               alt="Mission"
               className="rounded-lg shadow-md mb-6 md:mb-0"
@@ -65,7 +65,7 @@ export default function AboutBody() {
       {/* Values Section with Image */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <Image
+          <img
             src="p26.jpg"
             alt="Our Values"
             className="rounded-lg shadow-md"
@@ -121,7 +121,7 @@ export default function AboutBody() {
 
           {/* Image Second */}
           <div className="order-1 md:order-2">
-            <Image
+            <img
               src="/p17.jpg"
               alt="Corporate Profile"
               className="rounded-lg shadow-lg h-[500px]"

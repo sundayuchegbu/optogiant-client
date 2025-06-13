@@ -49,7 +49,7 @@ export default function BlogPage() {
               key={post.id}
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition"
             >
-              <Image
+              <img
                 src={post.image}
                 alt={post.title}
                 className="w-full h-48 object-cover"

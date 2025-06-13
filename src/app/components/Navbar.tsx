@@ -1,9 +1,11 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -88,7 +90,11 @@ export default function Navbar() {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center p-1 text-lg gap-x-2 text-slate-600 hover:text-red-500"
+                  className={`flex items-center p-1 text-lg gap-x-2 ${
+                    pathname === item.href
+                      ? "text-[#004109] font-semibold"
+                      : "text-slate-600 hover:text-[#028010]"
+                  }`}
                 >
                   <Link
                     onClick={() => {
@@ -115,7 +121,11 @@ export default function Navbar() {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="flex items-center p-1 text-lg gap-x-2 text-[#004109] hover:text-[#028010]"
+                  className={`flex items-center p-1 text-lg gap-x-2 ${
+                    pathname === item.href
+                      ? "text-[#004109] font-semibold"
+                      : "text-[#028010] hover:text-[#004109]"
+                  }`}
                 >
                   <Link href={item.href} className="flex items-center">
                     {item.name}

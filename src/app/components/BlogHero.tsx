@@ -6,7 +6,7 @@ import Link from "next/link";
 const BlogHero = () => {
   return (
     <section className="relative bg-gradient-to-r from-[#e6f4ea] to-white">
-      <div className="max-w-7xl mx-auto px-6 py-24 flex flex-col-reverse lg:flex-row items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-24 lg:py-0 flex flex-col-reverse lg:flex-row items-center justify-between">
         {/* Text Content */}
         <div className="text-center lg:text-left max-w-xl">
           <h1 className="text-4xl md:text-5xl font-extrabold text-[#028010] leading-tight">
@@ -37,10 +37,10 @@ const BlogHero = () => {
         {/* Hero Image */}
         <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
           <Image
-            src="/p18.jpg" // replace with your image path
+            src="/p21.jpg"
             alt="Colorful paint buckets"
             width={500}
-            height={900}
+            height={500}
             className="mx-auto"
             priority
           />
@@ -50,8 +50,8 @@ const BlogHero = () => {
       {/* Decorative Blob or Background Overlay (optional) */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10">
         <Image
-          src="/p2.jpeg" // optional texture overlay
-          alt=""
+          src="/p18.jpg"
+          alt="Background texture"
           fill
           className="object-cover"
         />

@@ -37,7 +37,7 @@ const Testimonials = () => {
               className="bg-white p-6 rounded-xl shadow hover:shadow-md transition text-left"
             >
               <div className="flex items-center gap-4 mb-4">
-                <Image
+                <img
                   src={t.image}
                   alt={t.name}
                   className="w-12 h-12 rounded-full object-cover"
