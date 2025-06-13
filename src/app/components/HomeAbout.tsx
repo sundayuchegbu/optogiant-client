@@ -21,7 +21,7 @@ const HomeAbout = () => {
         {/* Image */}
         <div className="md:w-1/2 w-full">
           <Image
-            src="/p20.jpg" // Replace with your image path
+            src="/p20.jpg"
             alt="Paint roller on wall"
             width={600}
             height={400}
